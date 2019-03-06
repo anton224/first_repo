@@ -12,13 +12,11 @@
 */
 
 Route::get('/', function () {
+    return view('home'); });
 
-    return view('welcome'); });
-//Route::get('/','PagesContoller@home');
-
-Route::get('contact',function(){
+Route::get('/contact',function(){
    return view('contact');
 });
-Route::get('about',function(){
+Route::get('/about',function(){
     return view('about');
 });
