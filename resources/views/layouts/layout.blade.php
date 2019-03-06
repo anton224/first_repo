@@ -23,7 +23,7 @@
         @endif
         <div class="row" id = "row_bar">
             <div class="col-md-8 col-lg-8">
-                @if(count($errors > 0))
+                @if(count($errors) > 0)
                     @foreach($errors->all() as $error)
                         <div class="alert alert-danger">
                             {{$error}}
