@@ -4,15 +4,6 @@
     <meta charset="utf-8">
     <title> @yield('title','Laracast') </title>
     <link rel="stylesheet" href="/css/app.css">
-    {{--<style>--}}
-        {{--head{--}}
-            {{--background: #999;--}}
-            {{--padding: 10px;--}}
-        {{--}--}}
-        {{--body{--}}
-            {{--background: #395a90;--}}
-        {{--}--}}
-    {{--</style>--}}
 </head>
 <body>
 
@@ -23,13 +14,7 @@
         @endif
         <div class="row" id = "row_bar">
             <div class="col-md-8 col-lg-8">
-                @if(count($errors) > 0)
-                    @foreach($errors->all() as $error)
-                        <div class="alert alert-danger">
-                            {{$error}}
-                        </div>
-                    @endforeach
-                @endif
+                @include('inc.messages')
                 @yield('content')
             </div>
             <div class="col-md-4 col-lg-4">
