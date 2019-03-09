@@ -21,4 +21,4 @@ Route::get('/messages','MessagesController@getMessages');
 
 Route::post('contact/submit','MessagesController@submit');
 
-
+Route::resource('/posts','PostsController');
