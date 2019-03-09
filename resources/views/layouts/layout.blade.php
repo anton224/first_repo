@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-
     @include('inc.navbar')
     <div class="container">
         @if(Request::is('/'))
@@ -28,8 +27,5 @@
     {{--<li> <a href="/"> Home </a></li>--}}
     {{--<li> <a href="contact"> Contact </a></li>--}}
     {{--<li> <a href="about"> About </a></li>--}}
-
-
-
 </body>
 </html>
